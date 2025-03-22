@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Screen Color Tester [use ← / → to change color]</title>
+  </head>
+  <style>
+    body {
+      background-color: red;
+      margin: 0;
+      padding: 0;
+      cursor: none;
+    }
+  </style>
+  <body>
+    <script>
+      const colors = [
+        "red",
+        "green",
+        "blue",
+        "yellow",
+        "orange",
+        "purple",
+        "pink",
+        "brown",
+        "black",
+        "white",
+      ];
+      let colorIndex = 0;
+      window.addEventListener("keydown", (event) => {
+        console.log(event.key);
+        if (event.key === "ArrowUp" || event.key === "ArrowLeft") {
+          colorIndex = (colorIndex + 1) % colors.length;
+        } else if (event.key === "ArrowDown" || event.key === "ArrowRight") {
+          colorIndex = (colorIndex - 1 + colors.length) % colors.length;
+        }
+        document.body.style.backgroundColor = colors[colorIndex];
+      });
+    </script>
+  </body>
+</html>
