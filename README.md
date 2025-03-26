@@ -16,7 +16,10 @@ https://alphakevin.github.io/screen-color-tester/
 
 - Use <kbd>↑</kbd> or <kbd>←</kbd> to change color forward
 - Use <kbd>↓</kbd> or <kbd>→</kbd> to change color backward
-- Use <kbd>F11</kbd> to toggle full-screen mode
+- Full-screen mode toggling:
+  - Use <kbd>F11</kbd> on Windows
+  - Use <kbd>Control</kbd> + <kbd>Command</kbd> + <kbd>F</kbd> on macOS
+  - Click on the page
 
 ## References
 
