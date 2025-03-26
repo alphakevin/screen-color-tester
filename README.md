@@ -21,6 +21,12 @@ https://alphakevin.github.io/screen-color-tester/
   - Use <kbd>Control</kbd> + <kbd>Command</kbd> + <kbd>F</kbd> on macOS
   - Click on the page
 
+## Splash Screen and Help Tips
+
+- A splash screen with help tips is shown when the app loads
+- The splash screen disappears after 5 seconds or when the user clicks the close button
+- The splash screen can be shown again by pressing the <kbd>H</kbd> key
+
 ## References
 
 - Online testing tool https://lcdtech.info/en/tests/dead.pixel.htm
