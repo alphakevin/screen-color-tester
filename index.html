@@ -21,6 +21,15 @@
         "white",
       ];
       let colorIndex = 0;
+
+      const toggleFullScreen = () => {
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen();
+        } else if (document.exitFullscreen) {
+          document.exitFullscreen();
+        }
+      }
+
       window.addEventListener("keydown", (event) => {
         console.log(event.key);
         if (event.key === "ArrowUp" || event.key === "ArrowLeft") {
@@ -29,6 +38,10 @@
           colorIndex = (colorIndex - 1 + colors.length) % colors.length;
         }
         document.body.style.backgroundColor = colors[colorIndex];
+      });
+
+      window.addEventListener("click", () => {
+        toggleFullScreen();
       });
     </script>
   </body>
